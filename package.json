@@ -17,5 +17,8 @@
     "husky": "^8.0.3",
     "parcel": "^2.8.2",
     "rimraf": "^4.0.4"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0"
   }
 }
