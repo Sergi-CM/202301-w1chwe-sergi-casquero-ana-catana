@@ -310,54 +310,56 @@
 
     <section class="traveler-experiences">
       <div>
-        <h2>Traveler&#39s Experiences</h2>
-        <span>Here some awesome feedback from our travelers</span>
+        <h2 class="traveler-experiences__heading">Traveler&#39s Experiences</h2>
+        <span class="traveler-experiences__description">Here is some awesome feedback from our travelers</span>
       </div>
-      <ul>
+      <ul class="traveler-experiences__cards">
         <li>
-          <article>
-            <img src="img/avatar1.png" alt="John Doe">
-            <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born
+          <article class="traveler-experiences-card">
+            <img src="img/avatar1.png" alt="John Doe" class="traveler-experiences-card__image">
+            <p class="traveler-experiences-card__experience">But I must explain to you how all this mistaken idea of
+              denouncing pleasure and praising pain was born
               and I will give
               you a complete account of the system and expound the actual teachings of the great explorer of the
               truth, the master-
               builder of human happiness.</p>
             <div>
-              <span>★★★★★</span>
-              <span>John Doe</span>
-              <span>Accountant</span>
+              <span class="traveler-experiences-card__rating">★★★★★</span>
+              <span class="traveler-experiences-card__name">John Doe</span>
+              <span class="traveler-experiences-card__job">Accountant</span>
             </div>
           </article>
         </li>
 
         <li>
-          <article>
-            <img src="img/avatar2.png" alt="John Smith">
+          <article class="traveler-experiences-card">
+            <img src="img/avatar2.png" alt="John Smith" class="traveler-experiences-card__image">
             <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born
               and I will give
               you a complete account of the system and expound the actual teachings of the great explorer of the
               truth, the master-
               builder of human happiness.</p>
             <div>
-              <span>★★★★★</span>
-              <span>John Smith</span>
-              <span>Journalist, HWO News</span>
+              <span class="traveler-experiences-card__rating">★★★★★</span>
+              <span class="traveler-experiences-card__name">John Smith</span>
+              <span class="traveler-experiences-card__job">Journalist, HWO News</span>
             </div>
           </article>
         </li>
 
         <li>
-          <article>
-            <img src="img/avatar3.png" alt="Tamara Bellis">
-            <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born
+          <article class="traveler-experiences-card">
+            <img src="img/avatar3.png" alt="Tamara Bellis" class="traveler-experiences-card__image">
+            <p class="traveler-experiences-card__experience">But I must explain to you how all this mistaken idea of
+              denouncing pleasure and praising pain was born
               and I will give
               you a complete account of the system and expound the actual teachings of the great explorer of the
               truth, the master-
               builder of human happiness.</p>
             <div>
-              <span>★★★★★</span>
-              <span>Tamara Bellis</span>
-              <span>Managing Director, JTH</span>
+              <span class="traveler-experiences-card__rating">★★★★★</span>
+              <span class="traveler-experiences-card__name">Tamara Bellis</span>
+              <span class="traveler-experiences-card__job">Managing Director, JTH</span>
             </div>
           </article>
         </li>
@@ -368,24 +370,26 @@
 
     </section>
 
-    <section>
-      <h2>Our Newsletter</h2>
+
+
+    <section class="our-newsletter">
+      <h2 class="our-newsletter__heading">Our Newsletter</h2>
       <div>
         <label for="email">Email</label>
-        <input id="email" type="email" placeholder="Enter your email">
+        <input id="email" type="email" placeholder="Enter your email" class="our-newsletter__input">
       </div>
-      <button type="submit">Subscribe</button>
+      <button type="submit" class="our-newsletter__submit">Subscribe</button>
     </section>
 
-    <footer>
-      <ul>
+    <footer class="footer">
+      <ul class="footer__blocks">
         <li>
           <img src="img/logo.svg" alt="">
           <span>Copyright © Sergi & Ana 2023 All rights reserved</span>
         </li>
 
         <li>
-          <span>Menu</span>
+          <span class="footer-block__title">Menu</span>
           <ul>
             <li>Home</li>
             <li>Popular Destinations</li>
@@ -397,7 +401,7 @@
         </li>
 
         <li>
-          <span>Information</span>
+          <span class="footer-block__title">Information</span>
           <ul>
             <li>Destinations</li>
             <li>Supports</li>
@@ -408,7 +412,7 @@
         </li>
 
         <li>
-          <span>Contact Info</span>
+          <span class="footer-block__title">Contact Info</span>
           <ul>
             <li>
               <address><a href="tel:+123456789">+123 456 789</a></address>
@@ -421,7 +425,7 @@
         </li>
 
         <li>
-          <span>Follow us on</span>
+          <span class="footer-block__title">Follow us on</span>
           <i class="fa-brands fa-facebook"></i>
           <i class="fa-brands fa-pinterest"></i>
           <i class="fa-brands fa-instagram"></i>
