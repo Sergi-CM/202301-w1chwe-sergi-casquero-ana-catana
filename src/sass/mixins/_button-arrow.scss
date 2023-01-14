@@ -1,0 +1,8 @@
+@use "/src/sass/variables/colors";
+
+@mixin button-arrow($background-color: colors.$primary-color-strong) {
+  width: 60px;
+  height: 66px;
+  border-radius: 4px;
+  background-color: $background-color;
+}
