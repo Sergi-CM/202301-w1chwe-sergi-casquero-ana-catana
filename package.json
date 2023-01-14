@@ -14,13 +14,12 @@
   "license": "ISC",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.2",
-    "husky": "^8.0.3",
     "parcel": "^2.8.2",
     "rimraf": "^4.0.4"
   },
   "dependencies": {
-    "font-awesome": "^4.7.0",
     "@fontsource/playfair-display": "^4.5.12",
-    "@fontsource/rubik": "^4.5.13"
+    "@fontsource/rubik": "^4.5.13",
+    "font-awesome": "^4.7.0"
   }
 }
