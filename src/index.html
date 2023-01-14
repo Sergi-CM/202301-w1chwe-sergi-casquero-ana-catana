@@ -89,28 +89,50 @@
 
     <section class="popular-destinations">
       <div>
-        <h2>Popular Destinations</h2>
-        <p>Most popular destinations around the world, from historical places to natural wonders.</p>
+        <h2 class="popular-destinations__heading">Popular Destinations</h2>
+        <p class="popular-destinations__description">Most popular destinations around the world, from historical places
+          to natural wonders.</p>
       </div>
-      <ul>
-        <li>
 
-          <article>
+      <ul class="popular-destinations__cards">
+        <li>
+          <article class="popular-destinations-card">
             <img src="img/berlin.jpg" alt="monument of berlin">
             <div>
-
-              <span>Monument of Berlin</span>
-              <span>Berlin, Germany</span>
+              <span class="popular-destinations-card__title">Monument of Berlin</span>
+              <span class="popular-destinations-card__location">Berlin, Germany</span>
               <i class="fa-solid fa-location-dot"></i>
             </div>
           </article>
         </li>
 
-        <div>
-          <button><i class="fa-solid fa-angle-left"></i></button>
-          <button><i class="fa-solid fa-angle-right"></i></button>
-        </div>
+        <li>
+          <article class="popular-destinations-card">
+            <img src="img/millenium.jpg" alt="Millenium Bridge">
+            <div>
+              <span class="popular-destinations-card__title">Millenium Bridge</span>
+              <span class="popular-destinations-card__location">London, United Kingdom</span>
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+          </article>
+        </li>
+
+        <li>
+          <article class="popular-destinations-card">
+            <img src="img/venice.jpg" alt="Rialto Bridge">
+            <div>
+              <span class="popular-destinations-card__title">Rialto Bridge</span>
+              <span class="popular-destinations-card__location">Venice, Italy</span>
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+          </article>
+        </li>
       </ul>
+
+      <div>
+        <button><i class="fa-solid fa-angle-left"></i></button>
+        <button><i class="fa-solid fa-angle-right"></i></button>
+      </div>
 
     </section>
 
