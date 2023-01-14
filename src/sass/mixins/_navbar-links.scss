@@ -1,0 +1,6 @@
+@mixin navbar-links($font-weight: 400, $border-bottom: none) {
+  color: #fff;
+  font-family: rubik, sans-serif;
+  font-weight: $font-weight;
+  border-bottom: $border-bottom;
+}
