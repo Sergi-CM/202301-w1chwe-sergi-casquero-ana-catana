@@ -37,86 +37,126 @@
       </ul>
     </nav>
     <i class="fa-solid fa-bars"></i>
+
+    <div>
+      <a href="login">Log in</a>
+      <a href="signup">Sign up</a>
+    </div>
+
   </header>
 
-  <main class="main-container">
-    <section class="main-form">
-      <section class="main-form__headings">
-        <span>Start your unforgettable journey with us.</span>
-        <span>The best travel for your journey begins now</span>
+  <main>
+
+    <section top-section>
+
+      <section class="top-section__headings">
+        <h1 class="top-section__main-heading">Start your unforgettable journey with us.</h1>
+        <span class="top-section__motto">The best travel for your journey begins now</span>
       </section>
 
-      <form class="main-form">
-        <div class="main-form__imput">
-          <label>Destination<input type="text" required></label>
-        </div>
-        <div class="main-form__imput">
-          <label>Person<input type="number" required></label>
-        </div>
-        <div class="main-form__imput">
-          <label>Check in<input type="date" required></label>
-        </div>
-        <div class="main-form__imput">
-          <label>Check out<input type="date"></label>
-        </div>
-        <div class="main-form__submit">
-          <span>Book now</span>
-          <i class="fa-solid fa-arrow-right"></i>
-        </div>
-      </form>
+      <section class="main-form">
+        <form class=>
 
+          <div class="main-form__input">
+            <label>Destination</label>
+            <input type="text" required>
+          </div>
+
+          <div class="main-form__input">
+            <label>Person</label>
+            <input type="number" required>
+          </div>
+
+          <div class="main-form__input">
+            <label>Check in</label>
+            <input type="date" required>
+          </div>
+
+          <div class="main-form__input">
+            <label>Check out</label>
+            <input type="date">
+          </div>
+
+          <div class="main-form__submit">
+            <span>Book now</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </form>
+
+      </section>
     </section>
 
 
     <section class="popular-destinations">
       <div>
-        <h2>Popular Destinations</h2>
-        <p>Most popular destinations around the world, from historical places to natural wonders.</p>
+        <h2 class="popular-destinations__heading">Popular Destinations</h2>
+        <p class="popular-destinations__description">Most popular destinations around the world, from historical places
+          to natural wonders.</p>
       </div>
-      <ul>
-        <li>
 
-          <article>
+      <ul class="popular-destinations__cards">
+        <li>
+          <article class="popular-destinations-card">
             <img src="img/berlin.jpg" alt="monument of berlin">
             <div>
-
-              <span>Monument of Berlin</span>
-              <span>Berlin, Germany</span>
+              <span class="popular-destinations-card__title">Monument of Berlin</span>
+              <span class="popular-destinations-card__location">Berlin, Germany</span>
               <i class="fa-solid fa-location-dot"></i>
             </div>
           </article>
         </li>
 
-        <div>
-          <button><i class="fa-solid fa-angle-left"></i></button>
-          <button><i class="fa-solid fa-angle-right"></i></button>
-        </div>
+        <li>
+          <article class="popular-destinations-card">
+            <img src="img/millenium.jpg" alt="Millenium Bridge">
+            <div>
+              <span class="popular-destinations-card__title">Millenium Bridge</span>
+              <span class="popular-destinations-card__location">London, United Kingdom</span>
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+          </article>
+        </li>
+
+        <li>
+          <article class="popular-destinations-card">
+            <img src="img/venice.jpg" alt="Rialto Bridge">
+            <div>
+              <span class="popular-destinations-card__title">Rialto Bridge</span>
+              <span class="popular-destinations-card__location">Venice, Italy</span>
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+          </article>
+        </li>
       </ul>
+
+      <div>
+        <button><i class="fa-solid fa-angle-left"></i></button>
+        <button><i class="fa-solid fa-angle-right"></i></button>
+      </div>
 
     </section>
 
-    <section>
-      <div>
-        <h2>Special Offer</h2>
-        <span>Check out our special offer and discounts</span>
+    <section class="special-offer">
+      <div class="special-offer__heading">
+        <h2 class="special-offer__title">Special Offer</h2>
+        <span class="special-offer__description">Check out our special offer and discounts</span>
       </div>
 
-      <ul>
-
+      <ul class="special-offer__cards">
         <li>
-          <article>
-            <img src="img/lisbon.jpg" alt="lisbon landscape">
+          <article class="special-offer-card">
+            <img src="img/lisbon.jpg" alt="lisbon landscape" class="special-offer-card__image">
             <div>
-              <span>Lisbon, Portugal</span>
-              <span>★★★★★</span>
-              <p>5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the renaissance.
-                Passage and
-                going through the cites of the world in classical literature.</p>
+              <span class="special-offer-card__title">Lisbon, Portugal</span>
+              <span class="special-offer-card__rating">★★★★★</span>
+              <p class="special-offer-card__description">5 nights and 4 days in 5 star hotel, breakfast and lunch
+                included. Very popular during the renaissance.
+                Passage and going through the cites of the world in classical literature.</p>
             </div>
             <div>
               <div>
                 <span>From</span>
-                <span>€500</span>
+                <span class="special-offer-card__price">€500</span>
               </div>
               <a href="details">Details</a>
             </div>
@@ -124,19 +164,19 @@
         </li>
 
         <li>
-          <article>
-            <img src="img/athens.jpg" alt="Parthenon detail">
+          <article class="special-offer-card">
+            <img src="img/athens.jpg" alt="Parthenon detail" class="special-offer-card__image">
             <div>
-              <span>Athens, Greece</span>
-              <span>★★★★★</span>
-              <p>5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the renaissance.
-                Passage and
-                going through the cites of the world in classical literature.</p>
+              <span class="special-offer-card__title">Athens, Greece</span>
+              <span class="special-offer-card__rating">★★★★★</span>
+              <p class="special-offer-card__description">5 nights and 4 days in 5 star hotel, breakfast and lunch
+                included. Very popular during the renaissance.
+                Passage and going through the cites of the world in classical literature.</p>
             </div>
             <div>
               <div>
                 <span>From</span>
-                <span>€800</span>
+                <span class="special-offer-card__price">€800</span>
               </div>
               <a href="details">Details</a>
             </div>
@@ -144,19 +184,19 @@
         </li>
 
         <li>
-          <article>
-            <img src="img/venice.jpg" alt="Venice landscape">
+          <article class="special-offer-card">
+            <img src="img/venice.jpg" alt="Venice landscape" class="special-offer-card__image">
             <div>
-              <span>Venice, Italy</span>
-              <span>★★★★★</span>
-              <p>5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the renaissance.
-                Passage and
-                going through the cites of the world in classical literature.</p>
+              <span class="special-offer-card__title">Venice, Italy</span>
+              <span class="special-offer-card__rating">★★★★★</span>
+              <p class="special-offer-card__description">5 nights and 4 days in 5 star hotel, breakfast and lunch
+                included. Very popular during the renaissance.
+                Passage and going through the cites of the world in classical literature.</p>
             </div>
             <div>
               <div>
                 <span>From</span>
-                <span>€750</span>
+                <span class="special-offer-card__price">€750</span>
               </div>
               <a href="details">Details</a>
             </div>
