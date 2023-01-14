@@ -1,1 +1,5 @@
 @import url(/node_modules/font-awesome/css/font-awesome.min.css);
+@use "/src/sass/_reset";
+@use "/src/sass/variables/_colors";
+@use "/src/sass/variables/_font-sizes";
+@use "/src/sass/variables/_styles";
