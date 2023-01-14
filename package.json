@@ -20,6 +20,7 @@
   "dependencies": {
     "@fontsource/playfair-display": "^4.5.12",
     "@fontsource/rubik": "^4.5.13",
-    "font-awesome": "^4.7.0"
+    "font-awesome": "^4.7.0",
+    "husky": "^8.0.3"
   }
 }
