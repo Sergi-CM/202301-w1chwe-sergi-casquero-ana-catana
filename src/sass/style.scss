@@ -3,6 +3,7 @@
 @use "/src/sass/variables/_font-sizes";
 @use "/src/sass/variables/_styles";
 @use "/src/sass/functions/_pixels-to-rem.scss";
+@use "/src/sass/mixins/_button-arrow";
 
 @import url("/node_modules/@fontsource/playfair-display/400.css");
 @import url("/node_modules/@fontsource/rubik/400.css");
@@ -18,6 +19,20 @@ body {
     & + span {
       font-size: pixels-to-rem.pixelsToRem(font-sizes.$font-size-card-text);
     }
+  }
+
+  .button-left {
+    width: 66px;
+    height: 60px;
+    border-radius: 12px;
+    background-color: colors.$footer-color-background;
+  }
+
+  .button-right {
+    width: 66px;
+    height: 60px;
+    border-radius: 12px;
+    background-color: colors.$primary-color-strong;
   }
 
   .top-section {
