@@ -161,7 +161,7 @@ body {
       scroll-behavior: smooth;
       -ms-overflow-style: none;
       overflow: hidden;
-      margin-top: 100px;
+      margin: 100px 0;
 
       .popular-destinations-card {
         scroll-snap-align: start;
@@ -175,5 +175,11 @@ body {
     .popular-destinations-card__text-container {
       z-index: 1;
     }
+  }
+
+  .special-offer {
+    border: 1px solid red;
+    width: 100%;
+    padding: styles.$padding-main;
   }
 }
