@@ -3,7 +3,6 @@
 @use "/src/sass/variables/_font-sizes";
 @use "/src/sass/variables/_styles";
 @use "/src/sass/functions/_pixels-to-rem.scss";
-@use "/src/sass/mixins/_button-arrow";
 
 @import url("/node_modules/@fontsource/playfair-display/400.css");
 @import url("/node_modules/@fontsource/rubik/400.css");
@@ -15,6 +14,16 @@ body {
   h2 {
     font-family: playfair display, serif;
     font-size: pixels-to-rem.pixelsToRem(font-sizes.$font-size-main-heading);
+    font-weight: 100;
+
+    &:after {
+      content: "";
+      width: 80%;
+      height: 0.1875rem;
+      background-color: #ff7757;
+      margin: 1.25rem 0;
+      display: block;
+    }
 
     & + span {
       font-size: pixels-to-rem.pixelsToRem(font-sizes.$font-size-card-text);
@@ -41,6 +50,8 @@ body {
     background-position: bottom left;
     background-repeat: no-repeat;
     padding: styles.$padding-main;
+    padding-bottom: 100px;
+    margin-bottom: 80px;
 
     .header {
       display: flex;
@@ -133,8 +144,10 @@ body {
       }
     }
   }
+
   .popular-destinations {
     position: relative;
+    padding: styles.$padding-main;
 
     .popular-destinations__cards {
       // --slide-width: clamp(240px, 75vh, 600px);
@@ -147,7 +160,8 @@ body {
       overflow-x: auto;
       scroll-behavior: smooth;
       -ms-overflow-style: none;
-      scrollbar-width: none;
+      overflow: hidden;
+      margin-top: 100px;
 
       .popular-destinations-card {
         scroll-snap-align: start;
