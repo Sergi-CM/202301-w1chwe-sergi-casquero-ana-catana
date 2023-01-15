@@ -2,3 +2,99 @@
 @use "/src/sass/variables/_colors";
 @use "/src/sass/variables/_font-sizes";
 @use "/src/sass/variables/_styles";
+@use "/src/sass/functions/_pixels-to-rem.scss";
+
+@import url("/node_modules/@fontsource/playfair-display/400.css");
+@import url("/node_modules/@fontsource/rubik/400.css");
+@import url("/node_modules/@fortawesome/fontawesome-free/css/all.min.css");
+
+body {
+  font-family: Rubik, sans-serif;
+
+  .top-section {
+    background-image: url("/src/img/hero.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: styles.$padding-main;
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 60px;
+
+      &__navbar {
+        display: none;
+      }
+
+      &__buttons {
+        display: none;
+      }
+
+      .fa-bars {
+        color: #fff;
+        font-size: 2rem;
+      }
+    }
+
+    &__headings {
+    }
+
+    &__main-heading {
+      font-family: playfair display, serif;
+      font-weight: 200;
+      font-size: 40px;
+      color: #fff;
+    }
+
+    &__motto {
+      color: #fff;
+      font-size: font-sizes.$font-size-card-text;
+      font-weight: 100;
+    }
+
+    .main-form {
+      position: relative;
+      width: 93%;
+      padding: styles.$padding-main;
+      background-color: #fff;
+      border-radius: styles.$border-radius-form;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      height: 550px;
+
+      &__input {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        text-transform: uppercase;
+        font-size: font-sizes.$font-size-main-form;
+        color: colors.$labels-color;
+      }
+
+      &__submit {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 128px;
+        background-color: colors.$primary-color-strong;
+        color: #fff;
+        font-family: fairplay display, serif;
+        font-weight: 100;
+        font-size: font-sizes.$font-size-button-book;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 0 0 styles.$border-radius-form styles.$border-radius-form;
+        padding: styles.$padding-main;
+      }
+
+      & i {
+        font-size: 30px;
+      }
+    }
+  }
+}

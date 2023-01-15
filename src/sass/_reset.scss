@@ -1,0 +1,18 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+ul,
+li {
+  margin: 0;
+  list-style: none;
+}
