@@ -11,6 +11,15 @@
 body {
   font-family: Rubik, sans-serif;
 
+  h2 {
+    font-family: playfair display, serif;
+    font-size: pixels-to-rem.pixelsToRem(font-sizes.$font-size-main-heading);
+
+    & + span {
+      font-size: pixels-to-rem.pixelsToRem(font-sizes.$font-size-card-text);
+    }
+  }
+
   .top-section {
     background-image: url("/src/img/hero.jpg");
     background-size: 1900px;
@@ -107,6 +116,35 @@ body {
       & i {
         font-size: 30px;
       }
+    }
+  }
+  .popular-destinations {
+    position: relative;
+
+    .popular-destinations__cards {
+      // --slide-width: clamp(240px, 75vh, 600px);
+
+      display: grid;
+      grid-auto-flow: column;
+      scroll-snap-type: x mandatory;
+      // width: 100%;
+      overflow-y: hidden;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+
+      .popular-destinations-card {
+        scroll-snap-align: start;
+        width: 100vw;
+        height: 500px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+    .popular-destinations-card__text-container {
+      z-index: 1;
     }
   }
 }
