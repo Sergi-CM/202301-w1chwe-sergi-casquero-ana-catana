@@ -21,22 +21,22 @@
         <nav>
           <ul class="header__navbar">
             <li>
-              <a href="home">Home</a>
+              <a href="">Home</a>
             </li>
             <li>
-              <a href="Popular-destinations">Popular destinations</a>
+              <a href="">Popular destinations</a>
             </li>
             <li>
-              <a href="Special-offer">Special offer</a>
+              <a href="">Special offer</a>
             </li>
             <li>
-              <a href="Our-blog">Our blog</a>
+              <a href="">Our blog</a>
             </li>
             <li>
-              <a href="Trip-planners">Trip planners</a>
+              <a href="">Trip planners</a>
             </li>
             <li>
-              <a href="Travelers-experiences">Traveler's experiences</a>
+              <a href="">Traveler's experiences</a>
             </li>
           </ul>
         </nav>
@@ -90,19 +90,18 @@
     <section class="popular-destinations">
       <div>
         <h2 class="popular-destinations__heading">Popular Destinations</h2>
-        <span class="popular-destinations__description">Most popular destinations around the world, from historical
-          places
-          to natural wonders.</span>
+        <p class="popular-destinations__description">Most popular destinations around the world, from historical places
+          to natural wonders.</p>
       </div>
 
       <ul class="popular-destinations__cards">
         <li>
           <article class="popular-destinations-card">
             <img src="img/berlin.jpg" alt="monument of berlin">
-            <div class="popular-destinations-card__text-container">
-              <i class="fa-solid fa-location-dot"></i>
+            <div>
               <span class="popular-destinations-card__title">Monument of Berlin</span>
               <span class="popular-destinations-card__location">Berlin, Germany</span>
+              <i class="fa-solid fa-location-dot"></i>
             </div>
           </article>
         </li>
@@ -111,9 +110,9 @@
           <article class="popular-destinations-card">
             <img src="img/millenium.jpg" alt="Millenium Bridge">
             <div>
-              <i class="fa-solid fa-location-dot"></i>
               <span class="popular-destinations-card__title">Millenium Bridge</span>
               <span class="popular-destinations-card__location">London, United Kingdom</span>
+              <i class="fa-solid fa-location-dot"></i>
             </div>
           </article>
         </li>
@@ -122,17 +121,17 @@
           <article class="popular-destinations-card">
             <img src="img/venice.jpg" alt="Rialto Bridge">
             <div>
-              <i class="fa-solid fa-location-dot"></i>
               <span class="popular-destinations-card__title">Rialto Bridge</span>
               <span class="popular-destinations-card__location">Venice, Italy</span>
+              <i class="fa-solid fa-location-dot"></i>
             </div>
           </article>
         </li>
       </ul>
 
       <div>
-        <button class="button-left"><i class="fa-solid fa-angle-left"></i></button>
-        <button class="button-right"><i class="fa-solid fa-angle-right"></i></button>
+        <button><i class="fa-solid fa-angle-left"></i></button>
+        <button><i class="fa-solid fa-angle-right"></i></button>
       </div>
 
     </section>
@@ -164,7 +163,7 @@
           </article>
         </li>
 
-        <!-- <li>
+        <li>
           <article class="special-offer-card">
             <img src="img/athens.jpg" alt="Parthenon detail" class="special-offer-card__image">
             <div>
@@ -202,11 +201,11 @@
               <a href="details">Details</a>
             </div>
           </article>
-        </li> -->
+        </li>
       </ul>
 
-      <button class="button-left"><i class="fa-solid fa-angle-left"></i></button>
-      <button class="button-right"><i class="fa-solid fa-angle-right"></i></button>
+      <button><i class="fa-solid fa-angle-left"></i></button>
+      <button><i class="fa-solid fa-angle-right"></i></button>
 
     </section>
 
@@ -366,8 +365,8 @@
         </li>
       </ul>
 
-      <button class="button-left"><i class="fa-solid fa-angle-left"></i></button>
-      <button class="button-right"><i class="fa-solid fa-angle-right"></i></button>
+      <button><i class="fa-solid fa-angle-left"></i></button>
+      <button><i class="fa-solid fa-angle-right"></i></button>
 
     </section>
 
@@ -384,14 +383,14 @@
 
     <footer class="footer">
       <ul class="footer__blocks">
-        <li>
+        <li class="footer__heading">
           <img src="img/logo.svg" alt="">
           <span>Copyright © Sergi & Ana 2023 All rights reserved</span>
         </li>
 
         <li>
           <span class="footer-block__title">Menu</span>
-          <ul>
+          <ul class="footer-block__links">
             <li>Home</li>
             <li>Popular Destinations</li>
             <li>Special Offer</li>
@@ -403,7 +402,7 @@
 
         <li>
           <span class="footer-block__title">Information</span>
-          <ul>
+          <ul class="footer-block__links">
             <li>Destinations</li>
             <li>Supports</li>
             <li>Special Offer</li>
@@ -414,7 +413,7 @@
 
         <li>
           <span class="footer-block__title">Contact Info</span>
-          <ul>
+          <ul class="footer-block__links">
             <li>
               <address><a href="tel:+123456789">+123 456 789</a></address>
             </li>
@@ -425,12 +424,14 @@
           </ul>
         </li>
 
-        <li>
+        <li class="footer-block__social">
           <span class="footer-block__title">Follow us on</span>
-          <i class="fa-brands fa-facebook"></i>
-          <i class="fa-brands fa-pinterest"></i>
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-twitter"></i>
+          <div>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-pinterest"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+          </div>
         </li>
       </ul>
 
